@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Riddle Game</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="container">
+			<h1>Riddle Game</h1>
+
+			<section id="game" class="card">
+				<div class="meta">
+					<div id="progress">Riddle <span id="current">0</span>/<span id="total">0</span></div>
+					<div id="score">Score: <span id="scoreVal">0</span></div>
+				</div>
+
+				<div id="riddleArea">
+					<p id="riddle" class="riddle">Welcome — click Start to play!</p>
+				</div>
+
+				<div class="controls">
+					<input id="answer" type="text" placeholder="Type your answer here" autocomplete="off" />
+					<div class="buttons">
+						<button id="submitBtn">Submit</button>
+						<button id="hintBtn">Hint</button>
+						<button id="skipBtn">Skip</button>
+					</div>
+				</div>
+
+				<div id="hint" class="hint"></div>
+
+				<div class="footer">
+					<button id="startBtn">Start Game</button>
+					<button id="showAnswerBtn">Show Answer</button>
+				</div>
+			</section>
+
+			<section id="endScreen" class="card hidden">
+				<h2>Game Over</h2>
+				<p>Your final score: <strong id="finalScore">0</strong></p>
+				<button id="playAgainBtn">Play Again</button>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
